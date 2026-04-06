@@ -1,0 +1,41 @@
+/* ============================================
+   Chartline AI — Brand Color Palette
+   Inspired by NOAA nautical charts
+   ============================================ */
+
+:root {
+    /* ── Deep Waters — Backgrounds ── */
+    --navy:          #0F1C33;
+    --deep-sea:      #1B2A4A;
+    --midnight:      #243B5E;
+    --shoal-water:   #2D4A6F;
+
+    /* ── Shallows — Accent Blues ── */
+    --accent:        #5A9FCA;
+    --accent-light:  #7BB8D9;
+    --accent-wash:   #A8D4E6;
+    --accent-glow:   rgba(90, 159, 202, 0.12);
+
+    /* ── Land & Parchment ── */
+    --brass:         #C2B280;
+    --brass-light:   #D9D2C0;
+    --brass-glow:    rgba(194, 178, 128, 0.12);
+    --marsh:         #8B9E7C;
+
+    /* ── Chart Markers ── */
+    --marker:        #D4567A;
+    --marker-light:  #E8789A;
+    --marker-glow:   rgba(212, 86, 122, 0.15);
+
+    /* ── Text Hierarchy ── */
+    --white:         #F0EDE4;
+    --gray-100:      #D9D2C0;
+    --gray-300:      #B8C9DB;
+    --gray-400:      #8FA3BF;
+    --gray-600:      #627D98;
+
+    /* ── Gradients ── */
+    --gradient-ocean:  linear-gradient(135deg, #5A9FCA, #7BB8D9);
+    --gradient-marker: linear-gradient(135deg, #D4567A, #E8789A);
+    --gradient-depth:  linear-gradient(180deg, #0F1C33 0%, #1B2A4A 50%, #0F1C33 100%);
+}

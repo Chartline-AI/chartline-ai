@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.env
+node_modules/
+
+# Jekyll
+website/_site/
+website/.jekyll-cache/
+website/.jekyll-metadata
+website/.sass-cache/
+.gstack/

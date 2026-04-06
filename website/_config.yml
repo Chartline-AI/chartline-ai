@@ -1,0 +1,44 @@
+title: "Chartline AI"
+description: "Chartline AI helps businesses navigate the AI landscape with strategic consulting, implementation, and training."
+url: "https://chartline.ai"
+baseurl: ""
+
+# Permalink structure for blog posts
+permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Chartline AI"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .DS_Store
+
+# Feed settings
+feed:
+  path: /blog/feed.xml
+
+# Site-wide variables
+ga_tracking_id: "G-K8RE78R38F"

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chartline AI — Color Palette</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1B2A4A;
+            color: #F0EDE4;
+            padding: 3rem 2rem;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.3rem; }
+        .subtitle { color: #8FA3BF; font-size: 0.95rem; margin-bottom: 3rem; }
+
+        h2 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #8FA3BF;
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .palette-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .swatch {
+            flex: 1;
+            min-width: 140px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .swatch-color {
+            height: 90px;
+            position: relative;
+        }
+        .swatch-info {
+            padding: 0.8rem 1rem;
+        }
+        .swatch-name {
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .swatch-hex {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: #8FA3BF;
+        }
+        .swatch-use {
+            font-size: 0.72rem;
+            color: #627D98;
+            margin-top: 0.3rem;
+            line-height: 1.4;
+        }
+
+        .demo-section {
+            margin-top: 3rem;
+            padding: 2.5rem;
+            border-radius: 16px;
+            background: #0F1C33;
+            border: 1px solid rgba(143, 163, 191, 0.1);
+        }
+        .demo-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .demo-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .demo-btn {
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .demo-text {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: #B8C9DB;
+            max-width: 600px;
+        }
+        .demo-text strong { color: #F0EDE4; }
+        .demo-text .accent { color: #5A9FCA; }
+        .demo-text .marker { color: #D4567A; }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Chartline AI — Nautical Chart Palette</h1>
+    <p class="subtitle">Inspired by NOAA navigational charts. Deep water blues, warm parchment, and signature chart markers.</p>
+
+    <!-- DEEP WATERS — Backgrounds -->
+    <h2>Deep Waters — Backgrounds</h2>
+    <div class="palette-row">
+        <div class="swatch">
+            <div class="swatch-color" style="background: #0F1C33;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Deep Water</div>
+                <div class="swatch-hex">#0F1C33</div>
+                <div class="swatch-use">Primary background</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #1B2A4A;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Open Sea</div>
+                <div class="swatch-hex">#1B2A4A</div>
+                <div class="swatch-use">Alternate sections</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #243B5E;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Coastal Blue</div>
+                <div class="swatch-hex">#243B5E</div>
+                <div class="swatch-use">Cards, elevated surfaces</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #2D4A6F;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Shoal Water</div>
+                <div class="swatch-hex">#2D4A6F</div>
+                <div class="swatch-use">Hover states, borders</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHALLOWS — Accent Blues -->
+    <h2>Shallows — Accent Blues</h2>
+    <div class="palette-row">
+        <div class="swatch">
+            <div class="swatch-color" style="background: #5A9FCA;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Chart Blue</div>
+                <div class="swatch-hex">#5A9FCA</div>
+                <div class="swatch-use">Primary accent, links</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #7BB8D9;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Shallow Water</div>
+                <div class="swatch-hex">#7BB8D9</div>
+                <div class="swatch-use">Light accent, highlights</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #A8D4E6;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Coastal Wash</div>
+                <div class="swatch-hex">#A8D4E6</div>
+                <div class="swatch-use">Grid lines, subtle UI</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LAND — Warm Neutrals -->
+    <h2>Land & Parchment — Warm Neutrals</h2>
+    <div class="palette-row">
+        <div class="swatch">
+            <div class="swatch-color" style="background: #F0EDE4;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Parchment</div>
+                <div class="swatch-hex">#F0EDE4</div>
+                <div class="swatch-use">Primary text on dark</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #D9D2C0;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Sand Bar</div>
+                <div class="swatch-hex">#D9D2C0</div>
+                <div class="swatch-use">Secondary text</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #C2B280;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Shoal Tan</div>
+                <div class="swatch-hex">#C2B280</div>
+                <div class="swatch-use">Brass accents, labels</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #8B9E7C;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Marsh Green</div>
+                <div class="swatch-hex">#8B9E7C</div>
+                <div class="swatch-use">Success states, nature</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MARKERS — Signal Colors -->
+    <h2>Chart Markers — Signal Colors</h2>
+    <div class="palette-row">
+        <div class="swatch">
+            <div class="swatch-color" style="background: #D4567A;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Magenta Marker</div>
+                <div class="swatch-hex">#D4567A</div>
+                <div class="swatch-use">CTAs, navigation marks</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #E8789A;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Marker Light</div>
+                <div class="swatch-hex">#E8789A</div>
+                <div class="swatch-use">Hover states, highlights</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #C2B280;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name">Brass Instrument</div>
+                <div class="swatch-hex">#C2B280</div>
+                <div class="swatch-use">Waypoints, borders</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEXT HIERARCHY -->
+    <h2>Text Hierarchy</h2>
+    <div class="palette-row">
+        <div class="swatch">
+            <div class="swatch-color" style="background: #F0EDE4;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Headings</div>
+                <div class="swatch-hex">#F0EDE4</div>
+                <div class="swatch-use">H1, H2, nav items</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #B8C9DB;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Body Text</div>
+                <div class="swatch-hex">#B8C9DB</div>
+                <div class="swatch-use">Paragraphs, descriptions</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #8FA3BF;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Muted</div>
+                <div class="swatch-hex">#8FA3BF</div>
+                <div class="swatch-use">Captions, fine print</div>
+            </div>
+        </div>
+        <div class="swatch">
+            <div class="swatch-color" style="background: #627D98;"></div>
+            <div class="swatch-info">
+                <div class="swatch-name" style="color:#0F1C33;">Disabled</div>
+                <div class="swatch-hex">#627D98</div>
+                <div class="swatch-use">Inactive elements</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEMO -->
+    <div class="demo-section">
+        <h3>How it looks together</h3>
+        <div class="demo-btns">
+            <button class="demo-btn" style="background: linear-gradient(135deg, #D4567A, #E8789A); color: white;">Set Sail &rarr;</button>
+            <button class="demo-btn" style="background: transparent; color: #D9D2C0; border: 1px solid rgba(194, 178, 128, 0.3);">Explore Services</button>
+            <button class="demo-btn" style="background: rgba(90, 159, 202, 0.12); color: #7BB8D9; border: 1px solid rgba(90, 159, 202, 0.2);">Learn More</button>
+        </div>
+        <p class="demo-text">
+            <strong>Chartline AI</strong> helps businesses <span class="accent">navigate the world of AI</span> with custom solutions built for your specific operations. From <span class="marker">strategy</span> to deployment, we chart the course from where you are to where you want to be.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>

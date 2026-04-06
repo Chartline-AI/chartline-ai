@@ -1,0 +1,32 @@
+---
+layout: blog
+title: "Blog"
+description: "Insights on AI strategy, implementation, and business growth from Chartline AI."
+---
+
+<section style="padding: 7rem 2rem 3rem; text-align: center;">
+    <div class="section-inner fade-up">
+        <div class="section-label">Ship's Log</div>
+        <h1 class="section-title">Chartline Blog</h1>
+        <p class="section-subtitle" style="margin: 0 auto;">Dispatches on AI strategy, implementation, and navigating business growth.</p>
+    </div>
+</section>
+
+<section style="padding: 0 2rem 4rem;">
+    <div class="section-inner">
+        {% if site.posts.size > 0 %}
+        <div class="post-grid">
+            {% for post in site.posts %}
+            <a href="{{ post.url }}" class="post-card fade-up" style="text-decoration: none; color: inherit; display: block;">
+                <div class="post-date">{{ post.date | date: "%B %d, %Y" }}</div>
+                <h2 class="post-title">{{ post.title }}</h2>
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                <span class="read-more">Read more &rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p style="text-align: center; color: var(--gray-400); padding: 3rem 0;">No posts yet. Check back soon.</p>
+        {% endif %}
+    </div>
+</section>
